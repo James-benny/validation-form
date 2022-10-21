@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <div class="heading">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </div>
+</head>
+
+<body>
+    <div class="container-fluid form-org" id="registry-form">
+        <div class="container">
+        <h1 style="text-align:center; font-family: Verdana; font-size:30px;color: white;" >freeCodeCamp Survey Form</h1>
+        <h5 style="text-align:center;"> <i style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:20px; color: white;">Thank you for taking the time to help us improve the platform</i></h5><br>
+        <form class="container">
+            <label>Name</label><br>
+            <input type="text" name="Fullname" placeholder="Enter your name" id="name"><br>
+            <label> Email</label><br>
+            <input type="email" name="email" placeholder="Enter your Email" id="email"><br>
+            <label> Password</label><br>
+            <input type="password" name="password" placeholder="Enter your Password" id="password"><br>
+            <label> Confirm Password</label><br>
+            <input type="password" name="Password" placeholder="Confirm Password" id="confirmPassword"><br>
+            <!-- <label>Age (optional)</label><br>
+            <input type="number" name="age" placeholder="Age" id="age-input"><br> -->
+            <label>Which option best describes your country?</label><br>
+            <select id="dropdown" name="role" class="form-control" id="country" placeholder="Select current role" required class="dropdown">
+                <option value id="country">Select country</option>
+                <option value="nigeria" id="country">Nigeria</option>
+                <option value="ghana" id="country">Ghana</option>
+                <option value="india" id="country">India</option>
+                <option value="england" id="country">England</option>
+                <option value="other" id="country">Other</option>
+            </select><br><br>
+
+            <p class="recommend" name="gender">Gender</p>
+            <div id="gender">
+            <input type="radio" value="male" name="gender" id="gender"> Male <br>
+            <input type="radio" value="female" name="gender" id="gender"> Female <br>
+            <input type="radio" value="gender" name="gender" id="gender"> Not sure<br><br>
+            </div>
+
+            <p class="recommend" name="gender">Hobbies</p>
+            <input type="radio" value="singing" name="hobby" id="hobby"> Singing <br>
+            <input type="radio" value="sport" name="hobby" id="hobby"> Sport <br>
+            <input type="radio" value="dancing" name="hobby" id="hobby"> Dancing<br><br>
+            <!-- <label>What is your favourite feature of freeCodeCamp?</label><br>
+            <select id="dropdown" name="role" class="form-control" placeholder="Select current role" required>
+                <option disabled selected value>Select an option</option>
+                <option value="student">Challenges</option>
+                <option value="job">projects</option>
+                <option value="learner">Community</option>
+                <option value="preferNo">Open Source</option>
+            </select><br><br> -->
+            <!-- <label>What would you like to see improve? (check all that apply)</label><br>
+            <input type="checkbox" name="like">Front-end projects<br>
+            <input type="checkbox" name="like">Back-end projects<br>
+            <input type="checkbox" name="like">Data Visualization<br>
+            <input type="checkbox" name="like">Challenges<br>
+            <input type="checkbox" name="like">Open Source Communuity<br>
+            <input type="checkbox" name="like">Gitter help rooms<br>
+            <input type="checkbox" name="like">Video<br>
+            <input type="checkbox" name="like">City Meetups<br>
+            <input type="checkbox" name="like">Wiki<br>
+            <input type="checkbox" name="like">Forum<br>
+            <input type="checkbox" name="like">Additional Courses<br><br>
+            <label>Any comments or suggestions?</label><br>
+            <textarea name="comment" id="comment" cols="30" rows=""
+                placeholder="Enter your comment here..."></textarea><br> -->
+                     
+                <a href="">Create account</a>
+            <div class="submit">
+                <button class="submit-btn" type="submit">Create account</button>
+                <!-- <input type="Submit" value="Submit" class="submit-btn"> -->
+                
+            </div>    
+        </form>
+    </div>
+</div>
+    
+<script src="./js/app.js"></script>
+</body>
+
+</html>
